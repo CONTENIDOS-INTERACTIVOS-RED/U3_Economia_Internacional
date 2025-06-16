@@ -1,77 +1,36 @@
 export default {
   global: {
-    componenteFormativo:
-      'Componente Formativo con un nombre extremadamente largo y extenso',
-    descripcionCurso:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis vestibulum quam bibendum varius.<br/><br/>Quisque pretium at nulla sit amet placerat. Vestibulum consequat suscipit accumsan. Proin pharetra congue enim et tempus. Sed sodales dui volutpat, placerat tellus accumsan, semper est. Phasellus nec lorem elementum, mattis quam eget, vestibulum nibh. Sed.',
-    imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.svg'),
-    fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
-    imagenesDecorativasBanner: [
-      {
-        clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/banner-principal-decorativo-1.svg'),
-      },
-      {
-        clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/banner-principal-decorativo-2.svg'),
-      },
-    ],
+    numeroUnidad: '3',
+    tituloUnidad: 'Finanzas internacionales y desafíos globales',
   },
   menuPrincipal: {
     menu: [
-      // {
-      //   nombreRuta: 'inicio',
-      //   icono: 'fas fa-home',
-      //   titulo: 'Volver al inici',
-      // },
-      // {
-      //   nombreRuta: 'introduccion',
-      //   icono: 'fas fa-info-circle',
-      //   titulo: 'Introducció',
-      //   desarrolloContenidos: true,
-      // },
+      {
+        nombreRuta: 'introduccion',
+        icono: 'fas fa-info-circle',
+        titulo: 'Introducción',
+        desarrolloContenidos: true,
+      },
       {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Unidad',
+        titulo: 'Mercados financieros internacionales',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Título de segundo nivel',
+            titulo:
+              'Características y funciones de los mercados financieros internacionales',
             hash: 't_1_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '1.2',
-            titulo: 'Acordeón',
+            titulo:
+              'Factores que influyen en los mercados financieros internacionales',
             hash: 't_1_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.3',
-            titulo: 'Slider',
-            hash: 't_1_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.4',
-            titulo: 'Pestañas',
-            hash: 't_1_4',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.5',
-            titulo: 'Infografia interactiva',
-            hash: 't_1_5',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.6',
-            titulo: 'Infografia interactiva',
-            hash: 't_1_6',
           },
         ],
       },
@@ -79,38 +38,26 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Unidad',
+        titulo: 'Tipo de cambio y riesgo cambiario',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '2.1',
-            titulo: 'Texto destacado',
+            titulo: 'Concepto y clasificación de tipo de cambio',
             hash: 't_2_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '2.2',
-            titulo: 'Llamado a la acción - Recursos externos',
+            titulo: 'Factores que influyen en el tipo de cambio',
             hash: 't_2_2',
           },
           {
             icono: 'far fa-file-alt',
             numero: '2.3',
-            titulo: 'Audios',
+            titulo: 'Gestión del riesgo cambiario',
             hash: 't_2_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.4',
-            titulo: 'Listado',
-            hash: 't_2_4',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.5',
-            titulo: 'Línea de tiempo',
-            hash: 't_2_5',
           },
         ],
       },
@@ -118,22 +65,54 @@ export default {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: 'Unidad',
+        titulo: 'Inversiones internacionales y flujo de capital',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '3.1',
-            titulo: 'Carrusel',
+            titulo: 'Tipos de inversión internacional',
             hash: 't_3_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '3.2',
-            titulo: 'Tablas',
+            titulo: 'Factores que afectan los flujos de capital internacional',
             hash: 't_3_2',
           },
         ],
+      },
+      {
+        nombreRuta: 'tema4',
+        icono: 'far fa-file-alt',
+        numero: '4',
+        titulo: 'Desafíos globales en las finanzas internacionales',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.1',
+            titulo: 'Crisis financieras y su impacto en la economía global',
+            hash: 't_4_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.2',
+            titulo: 'Regulación financiera internacional',
+            hash: 't_4_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.3',
+            titulo: 'Retos del crecimiento económico en un entorno globalizado',
+            hash: 't_4_3',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'sintesis',
+        titulo: 'Síntesis',
+        desarrolloContenidos: true,
       },
     ],
     subMenu: [
@@ -159,251 +138,154 @@ export default {
         nombreRuta: 'referencias',
       },
       {
-        icono: 'fas fa-file-download',
-        titulo: 'Descargar PDF',
-        download: 'downloads/material.zip',
-      },
-      {
         icono: 'fas fa-download',
         titulo: 'Descargar material',
         download: 'downloads/material.zip',
-      },
-      {
-        icono: 'far fa-registered',
-        titulo: 'Síntesis',
-        nombreRuta: 'sintesis',
       },
     ],
   },
   referencias: [
     {
       referencia:
-        'Zlackman, C. (2012). 100 años de moda. Sistema de Bibliotecas SENA:',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=sena_aleph000060086&vid=SENA&search_scope=sena_completo&tab=sena_completo&lang=es_ES&context=L',
+        'Peña Castellanos, L. (2011). De la economía internacional: compilación 2010. Editorial Universitaria.  ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/71448',
     },
     {
       referencia:
-        'Castellanos, O., Fumeque A., y Ramirez D. (2011). Análisis de tendencias: de la información hacia la innovación. Universidad Nacional de Colombia. Sistema de Bibliotecas SENA:',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000007947',
+        'Orden Olasagasti, O. D. (2015). Gestión del riesgo y mercados financieros. Delta Publicaciones.  ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/170083',
     },
     {
       referencia:
-        '<em>Harpersbazaar</em>. (2019). La ropa que eliges afecta a tu estado de ánimo y cerebro, según expertos. En arpersbazaar.mx.',
+        'Tamayo Saborit, M., Casanova Montero, A. R. & Zuaznábar Morales, I. R. (2019). Finanzas internacionales: teoría y políticas. Editorial Universo Sur.  ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/120839',
     },
     {
       referencia:
-        'Lafuente M., Navarro J., y Navarro J. (2005). Ilustración de moda. Sistema de Bibliotecas SENA',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000025549',
+        'Población García, F. J. (2013). La gestión del riesgo en empresas industriales. Delta Publicaciones.  ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/169700',
     },
     {
       referencia:
-        'Laver, J.,  Albizua, H., y Fortea, B. (1990). Breve historia del traje y la moda. Sistema de Bibliotecas SENA.',
+        'Seco Presencio, A. & Calvo Hornero, A. (Dir.). (2015). Las instituciones financieras internacionales en los mercados de capital. D - UNED - Universidad Nacional de Educación a Distancia. ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/86614 ',
     },
     {
       referencia:
-        'Navarro, J.,  y Lafuente, M. (2010). Ilustración de moda: dibujo plano. Sistema de Bibliotecas SENA:',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/q6j6k0/sena_aleph000023241',
+        'Siglo XXI, S. S. (2009). Cuaderno para emprendedores y empresarios: comercio exterior. El Cid Editor. ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/34630 ',
     },
     {
       referencia:
-        'Áciedad Americana de Ensayos y Materiales (ASTM). (2003). Textiles. Editorial Staff. [Book]. Sistema de Bibliotecas SENA.',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000051551',
+        'Torrero Mañas, A. (2011). La crisis financiera internacional y sus efectos sobre la economía española: seis conferencias. Marcial Pons Ediciones Jurídicas y Sociales. ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/127389 ',
     },
     {
       referencia:
-        'Szkutnicka, B., Cuenca, C., Koyama, A. (2010). El dibujo técnico de moda paso a paso. Sistema de Bibliotecas SENA.',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_aleph000057728',
+        'León, G. (Comp.) & Afcha, S. (Comp.). (2013). Economía mundial, crecimiento económico y financiero factores para una estrategia local e internacional. A - Guillén Eduardo León López.  ',
+      link: 'https://elibro.net/es/lc/tecnologicadeloriente/titulos/190896',
     },
   ],
   glosario: [
     {
-      termino: 'MoodBoard',
+      termino: 'Activo financiero',
       significado:
-        'su traducción literal es mapa de inspiración y aunque su uso está muy asociado al ámbito de la decoración de interiores o la moda, <br/>realmente se utiliza en entornos creativos muy diversos, desde el diseño de productos o servicios al audiovisual o el diseño gráfico.',
+        'Instrumento negociable en los mercados financieros, que representa un derecho sobre ingresos futuros, como acciones y bonos.',
     },
     {
-      termino: '<em>Suftware</em>',
+      termino: 'Apalancamiento financiero',
       significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
+        'Uso de deuda para financiar inversiones con el objetivo de aumentar la rentabilidad de los recursos propios.',
     },
     {
-      termino: 'Pirognóstico',
+      termino: 'Basilea III',
       significado:
-        'ensayo sin componentes reactivos, quiere decir, reconocimiento de los componentes, mediante la aplicación adecuada del fuego.',
+        'Conjunto de normas internacionales, diseñadas para fortalecer la regulación, supervisión y gestión de riesgos, del sector bancario.',
     },
     {
-      termino: '<em>Áectores</em>',
+      termino: 'Crisis cambiaria',
       significado:
-        'en software de diseño, son líneas que se crean y permiten, expandir, modificar, al tamaño que sea sin pixelarse porque se unen por coordenadas matemáticas del programa y no se generan por números fijos.',
+        'Situación en la que una moneda experimenta una fuerte depreciación, afectando la estabilidad financiera de un país.',
     },
     {
-      termino: 'Moda',
+      termino: 'Derivados financieros',
       significado:
-        'hábito repetitivo que identifica a una persona, una especie de presión social, que debe consumir, utilizar o hacer.',
+        'Contratos cuyo valor depende del comportamiento de un activo subyacente, como futuros, opciones y swaps.',
     },
     {
-      termino: 'Diseña',
+      termino: 'Especulación financiera',
       significado:
-        'actividad creativa orientada a soluciones idóneas a ciertas problemáticas.',
+        'Compra y venta de activos con el objetivo de obtener beneficios por variaciones en los precios, sin un propósito productivo.',
     },
     {
-      termino: 'DIseño',
+      termino: 'Estabilidad financiera',
       significado:
-        'actividad creativa orientada a soluciones idóneas a ciertas problemáticas.',
+        'Condición en la que el sistema financiero funciona sin interrupciones, garantizando liquidez y confianza en los mercados.',
     },
     {
-      termino: 'Tipología',
+      termino: 'Fluctuación cambiaria',
       significado:
-        'estudio de los tipos o modelos que se usan para clasificar en diversas ciencias o disciplinas.',
+        'Variaciones en el valor de una moneda con respecto a otra, debido a factores económicos y políticos.',
     },
     {
-      termino: 'Bidimensional',
+      termino: 'Fondos soberanos',
       significado:
-        'que se representa según su altura y su anchura y no su profundidad.',
+        'Vehículos de inversión, gestionados por gobiernos que administran excedentes fiscales, para invertir en activos internacionales.',
     },
     {
-      termino: 'Interés Inferior del menor',
+      termino: '<em>Hedge Funds</em>',
       significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
+        'Fondos de inversión que emplean estrategias avanzadas de mercado, para maximizar rendimientos, usualmente con alto riesgo.',
     },
     {
-      termino: 'Interseccionalidad',
+      termino: 'Instrumentos de cobertura',
       significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
+        'Herramientas financieras como contratos de futuros y opciones, utilizadas para reducir riesgos cambiarios o de tasa de interés.',
     },
     {
-      termino: 'Interés superior del menor',
+      termino: 'Liquidez internacional',
       significado:
-        'término informático que hace referencia a un programa o conjunto de programas de cómputo, así como datos, procedimientos y pautas que permiten realizar distintas tareas en un sistema informático.',
+        'Disponibilidad de activos convertibles en efectivo en los mercados globales, sin generar grandes fluctuaciones de precios.',
+    },
+    {
+      termino: 'Mercado de capitales',
+      significado:
+        'Espacio donde se negocian activos financieros de largo plazo, como acciones y bonos.',
+    },
+    {
+      termino: 'Mercado de divisas (<em>Forex</em>)',
+      significado:
+        'Plataforma global donde se intercambian monedas extranjeras, determinando los tipos de cambio.',
+    },
+    {
+      termino: 'Prima de riesgo',
+      significado:
+        'Diferencia en la tasa de interés exigida por los inversionistas, para asumir el riesgo de una economía, frente a activos de menor riesgo.',
+    },
+    {
+      termino: 'Regulación financiera',
+      significado:
+        'Normativas y supervisión establecidas por entidades internacionales, para garantizar la transparencia y solidez del sistema financiero.',
+    },
+    {
+      termino: 'Riesgo país',
+      significado:
+        'Probabilidad de que un país incumpla sus obligaciones financieras, debido a factores económicos o políticos.',
+    },
+    {
+      termino: '<em>Swap</em> cambiario',
+      significado:
+        'Acuerdo financiero en el que dos partes intercambian flujos de efectivo en diferentes monedas, para gestionar riesgos de tipo de cambio.',
+    },
+    {
+      termino: 'Tasa LIBOR',
+      significado:
+        'Referencia global utilizada para fijar tasas de interés en préstamos interbancarios internacionales.',
+    },
+    {
+      termino: 'Volatilidad financiera',
+      significado:
+        'Grado de fluctuación en los precios de los activos financieros, influenciado por incertidumbre económica y especulación.',
     },
   ],
-  complementario: [
-    {
-      tema: 'Estrategias para la segmentación de mercados',
-      referencia:
-        'Cámara de Comercio de Medellín. (2020). <em>Suftware</em> Tendencias de negocios - Mercadeo y ventas',
-      tipo: 'Video',
-      link: 'https://www.google.com/',
-    },
-    {
-      tema: 'Estrategias para la segmentación de mercados',
-      referencia:
-        'Cámara de Comercio de Medellín. (2020). <em>Suftware</em> Tendencias de negocios - Mercadeo y ventas',
-      tipo: 'Video',
-      link: 'https://www.google.com/',
-    },
-    {
-      tema: 'Estrategias para la segmentación de mercados',
-      referencia:
-        'Cámara de Comercio de Medellín. (2020). <em>Suftware</em> Tendencias de negocios - Mercadeo y ventas',
-      tipo: 'Video',
-      link: 'https://www.google.com/',
-    },
-  ],
-  creditos: [
-    {
-      titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
-      autores: [
-        {
-          nombre: 'Maria Camila Garcia Santamaria',
-          cargo: 'Líder del equipo',
-          centro: 'Dirección General',
-        },
-      ],
-    },
-    {
-      titulo: 'CONTENIDO INSTRUCCIONAL',
-      autores: [
-        {
-          nombre: 'Rafael Neftalí Lizcano Reyes',
-          cargo: 'Asesor metodológico y pedagógico',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-      ],
-    },
-    {
-      titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
-      autores: [
-        {
-          nombre: 'Francisco José Lizcano Reyes',
-          cargo: 'Responsable del equipo',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Leyson Fabian Castaño Perez',
-          cargo: 'Soporte organizacional',
-          centro: 'Centro de Comercio y Servicios Regional Tolima',
-        },
-        {
-          nombre: ['Nombre 1', 'Nombre 2'],
-          cargo: 'Diseño web',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Desarrollo Front-End',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Producción audiovisual',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-        {
-          nombre: 'Nombre',
-          cargo: 'Validación de diseño y contenido',
-          centro:
-            'Centro Industrial del Diseño y la Manufactura Regional Santander',
-        },
-      ],
-    },
-    {
-      titulo: 'GESTORES DE REPOSITORIO',
-      autores: [
-        {
-          nombre: 'Milady Tatiana Villamil Castellanos',
-          cargo: 'Validación y vinculación en plataforma LMS',
-          centro: 'Centro de Comercio y Servicios Regional Tolima',
-        },
-      ],
-    },
-  ],
-  creditosAdicionales: {
-    imagenes:
-      'Fotografías y vectores tomados de <a href="https://www.freepik.es/" target="_blank">www.freepik.es</a>, <a href="https://www.shutterstock.com/" target="_blank">www.shutterstock.com</a>, <a href="https://unsplash.com/" target="_blank">unsplash.com </a>y <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a>',
-    creativeCommons:
-      'Licencia creative commons CC BY-NC-SA<br><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">ver licencia</a>',
-  },
-  // creditosInicio: [
-  //   {
-  //     titulo: 'En alianza',
-  //     contenido: [
-  //       require('@/assets/template/logo-sena-naranja.svg'),
-  //       require('@/assets/template/mintic.jpg'),
-  //       require('@/assets/template/minsalud.jpg'),
-  //     ],
-  //   },
-  //   {
-  //     titulo: 'En compañía',
-  //     contenido: [
-  //       require('@/assets/template/presidencia.jpg'),
-  //       require('@/assets/template/ecopetrol.jpg'),
-  //     ],
-  //   },
-  //   {
-  //     titulo: 'Una iniciativa',
-  //     contenido: [require('@/assets/template/santander.jpg')],
-  //   },
-  // ],
 }
