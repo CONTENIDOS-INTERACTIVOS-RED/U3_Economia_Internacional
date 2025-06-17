@@ -13,7 +13,7 @@
             p(data-aos="fade-left").mb-4 Para conocer sobre esta temática, lo invitamos a escuchar el siguiente pó Inversiones internacionales y flujo de capital
     
             TarjetaAudio.color-acento-botones.bg-color-white.mb-3(
-              texto="Fundamentos de la innovación estratégica"
+              texto="Inversiones internacionales y flujo de capital"
               tiempo
               :audio="require('../../assets/curso/podcast/podcast1.mp3')"
             )
