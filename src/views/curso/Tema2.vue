@@ -74,14 +74,14 @@
     .bg-full-width.bg-color-3
       .p-4.p-md-5
         .row.justify-content-center.align-items-stretch.mb-3
-          .col-lg-6
+          .col-lg-6.mb-3.mb-lg-0
             .bg-color-16.p-4(data-aos="fade-left").h-100
               .row.align-items-center
                 .col-lg-auto
                   img(src="@/assets/curso/tema2/7.svg", style="max-width: 90px").mx-auto
                 .col-lg
                   p.mb-0 El grado de apertura económica de un país.
-          .col-lg-6
+          .col-lg-6.mb-3.mb-lg-0
             .bg-color-16.p-4(data-aos="fade-left").h-100
               .row.align-items-center
                 .col-lg-auto
@@ -89,14 +89,14 @@
                 .col-lg
                   p.mb-0 La estabilidad de su sistema financiero.
         .row.justify-content-center.align-items-stretch.mb-5
-          .col-lg-6
+          .col-lg-6.mb-3.mb-lg-0
             .bg-color-16.p-4(data-aos="fade-left").h-100
               .row.align-items-center
                 .col-lg-auto
                   img(src="@/assets/curso/tema2/9.svg", style="max-width: 90px").mx-auto
                 .col-lg
                   p.mb-0 Su nivel de reservas internacionales.
-          .col-lg-6
+          .col-lg-6.mb-3.mb-lg-0
             .bg-color-16.p-4(data-aos="fade-left").h-100
               .row.align-items-center
                 .col-lg-auto
@@ -186,7 +186,7 @@
     .bg-full-width.bg-color-4.mb-5
       .px-4.p-md-5
         .row.justify-content-center.align-items-center
-          .col-lg-7.mb-3.mb-lg-0
+          .col-lg-7.order-2
             h2.mb-4(data-aos="flip-up") Gestión del riesgo cambiario
             p.mb-4(data-aos="fade-right") En el PDF <b>Gestión del riesgo cambiario</b>, se presentan estrategias como coberturas financieras, diversificación de mercados, intervención gubernamental y planificación empresarial, que permiten mitigar los efectos adversos de las fluctuaciones monetarias. Este material ofrece herramientas esenciales para fortalecer la estabilidad económica y la competitividad en contextos internacionales.
     
@@ -196,7 +196,7 @@
               .anexo__texto
                 p <strong>Anexo. </strong> Gestión del riesgo cambiario.
     
-          .col-lg-5
+          .col-lg-5.mb-3.mb-lg-0.order-1
             figure(data-aos="zoom-in")
               img(src='@/assets/curso/tema2/18.png', alt='')
 
